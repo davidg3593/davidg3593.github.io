@@ -34,7 +34,7 @@ jobs:
         run: npx next build
 
       - name: Upload artifact 📡
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
@@ -49,4 +49,4 @@ jobs:
     steps:
       - name: Publish to GitHub Pages 🚀
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
