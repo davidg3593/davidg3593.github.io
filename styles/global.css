@@ -2,4 +2,79 @@ html,
 body {
 	padding: 0;
 	margin: 0;
+	font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.button1 {
+	width: 10%;
+	height: 34px;
+	border-radius: 10px;
+	border: none;
+	background-color: #23a659;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: ease all 0.5s;
+}
+.button1:hover {
+	width: 10%;
+	height: 34px;
+	border-radius: 10px;
+	border: none;
+	background-color: #1a7540;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: ease all 0.5s;
+	cursor: pointer;
+}
+.button1:disabled {
+	width: 10%;
+	height: 34px;
+	border-radius: 10px;
+	border: none;
+	background-color: #23a659;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: ease all 0.5s;
+	opacity: 65%;
+	cursor: default;
+}
+.button2 {
+	width: 10%;
+	height: 34px;
+	border-radius: 10px;
+	border: none;
+	background-color: #1a75ad;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: ease all 0.5s;
+}
+.button2:hover {
+	width: 10%;
+	height: 34px;
+	border-radius: 10px;
+	border: none;
+	background-color: #155a85;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: ease all 0.5s;
+	cursor: pointer;
+}
+.button2:disabled {
+	width: 10%;
+	height: 34px;
+	border-radius: 10px;
+	border: none;
+	background-color: #1a75ad;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: ease all 0.5s;
+	opacity: 65%;
+	cursor: default;
 }
