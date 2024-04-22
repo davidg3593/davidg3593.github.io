@@ -5,9 +5,6 @@ const nextConfig = {
 	future: {
 		webpack5: true
 	},
-	build: {
-		env: {}
-	},
 	i18n: {
 		localeDetection: false,
 		locales: ['fr', 'en'],
