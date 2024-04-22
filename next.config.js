@@ -12,7 +12,9 @@ const nextConfig = {
 		localeDetection: false,
 		locales: ['fr', 'en'],
 		defaultLocale: 'fr'
-	}
+	},
+	output: 'export',
+	basePath: '/discordle'
 }
 
 module.exports = nextConfig
