@@ -5,11 +5,6 @@ const nextConfig = {
 	future: {
 		webpack5: true
 	},
-	i18n: {
-		localeDetection: false,
-		locales: ['fr', 'en'],
-		defaultLocale: 'fr'
-	},
 	output: 'export',
 	basePath: '/discordle'
 }
