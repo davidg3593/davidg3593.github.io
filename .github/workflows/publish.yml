@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'out'
+          path: 'pages'
 
   deploy:
     environment:
@@ -55,7 +55,7 @@ jobs:
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'out'
+          path: 'pages'
 
       - name: Publish to GitHub Pages 🚀
         id: deployment
