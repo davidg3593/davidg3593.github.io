@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: 'out'
 
   deploy:
     environment:
@@ -47,6 +47,16 @@ jobs:
     needs: build
 
     steps:
+      - name: Setup Pages ⚙️
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+
+      - name: Upload artifact 📡
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: 'out'
+
       - name: Publish to GitHub Pages 🚀
         id: deployment
         uses: actions/deploy-pages@v3
