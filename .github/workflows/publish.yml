@@ -33,10 +33,13 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npx next build
 
+      - name: Export with Next.js
+        run: npx next export
+
       - name: Upload artifact 📡
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: 'pages'
+          path: ./out
 
   deploy:
     environment:
@@ -49,4 +52,4 @@ jobs:
     steps:
       - name: Publish to GitHub Pages 🚀
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
